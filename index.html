@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>독모아 – 문서를 한곳에 모아 보는 앱</title>
   <meta name="description" content="HWP, PDF, DOCX, XLSX, PPTX, EPUB까지. 흩어진 문서를 한곳에서 편하게 여는 문서 뷰어, 독모아.">
-  <link rel="icon" href="img/logo.png">
+  <meta property="og:title" content="독모아 – 문서를 한곳에 모아 보는 앱">
+  <meta property="og:description" content="HWP, PDF, 워드, 엑셀, 파워포인트, 전자책을 하나의 앱에서.">
+  <meta property="og:image" content="img/og.png">
+  <link rel="icon" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +21,7 @@
       <nav>
         <a href="#features">기능</a>
         <a href="#formats">지원 형식</a>
+        <a href="#screens">화면</a>
         <a href="privacy.html">개인정보처리방침</a>
       </nav>
     </div>
@@ -25,13 +30,22 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <div>
+        <div class="copy">
+          <p class="eyebrow">문서 뷰어 · Android</p>
           <h1>흩어진 문서를<br><em>한곳에 모아</em> 편하게</h1>
-          <p class="lead">한글(HWP)부터 PDF, 워드, 엑셀, 파워포인트, 전자책까지. 어떤 문서든 독모아 하나로 열어 보세요. 따뜻한 종이 질감의 화면이 눈을 편안하게 해 줍니다.</p>
-          <a class="btn" href="#download">앱 받기</a>
-          <a class="btn ghost" href="#features">기능 보기</a>
+          <p class="lead">한글(HWP)부터 PDF, 워드, 엑셀, 파워포인트, 전자책까지.<br class="pc">어떤 문서든 독모아 하나로 열어 보세요.</p>
+          <div class="cta">
+            <a class="btn" href="#download">앱 받기</a>
+            <a class="btn ghost" href="#features">기능 둘러보기</a>
+          </div>
+          <ul class="chips">
+            <li>HWP</li><li>HWPX</li><li>PDF</li><li>DOCX</li><li>XLSX</li><li>PPTX</li><li>EPUB</li>
+          </ul>
         </div>
-        <div class="art"><img src="img/logo.png" alt="문서가 폴더로 모이는 독모아 로고"></div>
+        <div class="art">
+          <img class="phone" src="img/app_home.png" alt="독모아 홈 화면">
+          <img class="phone back" src="img/app_hwpx.png" alt="한글 문서를 연 화면">
+        </div>
       </div>
     </section>
 
@@ -40,50 +54,63 @@
         <h2>독모아가 해 주는 일</h2>
         <p class="sub">문서 앱을 여러 개 깔 필요가 없습니다.</p>
         <div class="grid">
-          <div class="card"><h3>한곳에서 모두 열기</h3><p>HWP, HWPX, PDF, DOCX, XLSX, PPTX, EPUB, 이미지, 텍스트를 하나의 앱에서 바로 엽니다.</p></div>
-          <div class="card"><h3>이어서 보기</h3><p>마지막으로 본 곳을 기억해 두었다가 홈에서 한 번에 이어 보여 줍니다.</p></div>
-          <div class="card"><h3>눈이 편한 화면</h3><p>종이 질감의 배경, 밝기와 글자 크기 조절, 어두운 모드까지 지원합니다.</p></div>
-          <div class="card"><h3>테마와 서체 선택</h3><p>앱 전체 색을 테마로 바꾸고, 기본 서체 또는 폰에 설치된 글꼴을 고를 수 있습니다.</p></div>
-          <div class="card"><h3>즐겨찾기와 검색</h3><p>자주 보는 문서는 별표로 모아 두고, 이름으로 빠르게 찾습니다.</p></div>
-          <div class="card"><h3>내 문서는 내 폰에</h3><p>문서를 서버로 올리지 않습니다. 모든 처리는 기기 안에서 이루어집니다.</p></div>
+          <div class="card"><div class="ico">📂</div><h3>한곳에서 모두 열기</h3><p>HWP, HWPX, PDF, DOCX, XLSX, PPTX, EPUB, 이미지, 텍스트를 하나의 앱에서 바로 엽니다.</p></div>
+          <div class="card"><div class="ico">⏱</div><h3>이어서 보기</h3><p>마지막으로 본 곳을 기억해 두었다가 홈에서 한 번에 이어 줍니다.</p></div>
+          <div class="card"><div class="ico">🌙</div><h3>눈이 편한 화면</h3><p>종이 질감의 배경, 밝기·글자 크기·줄 간격 조절, 어두운 모드까지 지원합니다.</p></div>
+          <div class="card"><div class="ico">🎨</div><h3>테마와 서체 선택</h3><p>앱 전체 색을 테마로 바꾸고, 기본 서체 또는 폰에 설치된 글꼴을 고를 수 있습니다.</p></div>
+          <div class="card"><div class="ico">⭐</div><h3>즐겨찾기와 검색</h3><p>자주 보는 문서는 별표로 모아 두고, 이름으로 빠르게 찾습니다.</p></div>
+          <div class="card"><div class="ico">🔒</div><h3>내 문서는 내 폰에</h3><p>문서를 서버로 올리지 않습니다. 모든 처리는 기기 안에서 이루어집니다.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="formats">
+    <section id="formats" class="tint">
       <div class="wrap">
         <h2>지원 형식</h2>
         <p class="sub">계속 늘려 가고 있습니다.</p>
         <div class="badges">
-          <span class="badge">HWP</span><span class="badge">HWPX</span><span class="badge">PDF</span>
-          <span class="badge">DOCX</span><span class="badge">XLSX</span><span class="badge">PPTX</span>
-          <span class="badge">EPUB</span><span class="badge">TXT</span><span class="badge">이미지(PNG·JPG 등)</span>
+          <span class="badge b-hwp">HWP · HWPX</span>
+          <span class="badge b-pdf">PDF</span>
+          <span class="badge b-doc">DOCX</span>
+          <span class="badge b-xls">XLSX · CSV</span>
+          <span class="badge b-ppt">PPTX</span>
+          <span class="badge b-epub">EPUB</span>
+          <span class="badge b-img">이미지</span>
+          <span class="badge b-txt">TXT · MD</span>
         </div>
+        <p class="note">※ 문서를 보는 용도의 앱이며 편집 기능은 제공하지 않습니다. HWP는 글과 표 중심으로 표시되고, 그림이나 복잡한 서식은 일부 보이지 않을 수 있습니다.</p>
       </div>
     </section>
 
     <section id="screens">
       <div class="wrap">
         <h2>화면 미리보기</h2>
-        <p class="sub">홈에서 최근 문서와 내 문서를 한눈에.</p>
-        <div class="shots">
-          <img src="img/home.png" alt="독모아 홈 화면">
-        </div>
+        <p class="sub">옆으로 넘겨 보세요.</p>
+      </div>
+      <div class="shots">
+        <figure><img src="img/shot_01_home.jpg" alt="홈 화면" loading="lazy"></figure>
+        <figure><img src="img/shot_02_hwpx.jpg" alt="한글 문서" loading="lazy"></figure>
+        <figure><img src="img/shot_03_docx.jpg" alt="워드 문서" loading="lazy"></figure>
+        <figure><img src="img/shot_04_xlsx.jpg" alt="엑셀 문서" loading="lazy"></figure>
+        <figure><img src="img/shot_06_epub.jpg" alt="전자책" loading="lazy"></figure>
+        <figure><img src="img/shot_07_dark.jpg" alt="다크 모드" loading="lazy"></figure>
+        <figure><img src="img/shot_08_theme.jpg" alt="테마 선택" loading="lazy"></figure>
       </div>
     </section>
 
-    <section id="download">
-      <div class="wrap">
-        <h2>앱 받기</h2>
+    <section id="download" class="tint">
+      <div class="wrap center">
+        <img class="appicon" src="img/favicon.png" alt="">
+        <h2>독모아 받기</h2>
         <p class="sub">Google Play 출시를 준비하고 있습니다. 출시되면 이곳에 링크가 걸립니다.</p>
-        <a class="btn" href="privacy.html">개인정보처리방침 보기</a>
+        <a class="btn" href="mailto:pdzone@daum.net">출시 소식 문의하기</a>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap">
-      <div>© 독모아 · 문의: <a href="mailto:pdzone@daum.net">pdzone@daum.net</a> · <a href="mailto:pdzone@nate.com">pdzone@nate.com</a></div>
+      <div>© 독모아 · 문의 <a href="mailto:pdzone@daum.net">pdzone@daum.net</a> · <a href="mailto:pdzone@nate.com">pdzone@nate.com</a></div>
       <div><a href="privacy.html">개인정보처리방침</a></div>
     </div>
   </footer>
